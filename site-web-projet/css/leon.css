@@ -1,0 +1,269 @@
+/* start variable */
+:root {
+    --min-color:#10bac7;
+}
+
+/* end variable */
+
+/* global rules */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #eee;
+}
+/* end of global rules */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width:768px){
+       .container {
+            width: 750px;
+       }
+}
+/* meduim */
+@media (min-width:992px){
+    .container {
+         width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container {
+         width: 1170px;
+    }
+}
+
+.header {
+    padding-top: 20px; 
+    background-color: #eee;
+    position: sticky;
+    top: 0%;
+    z-index: 99;
+}
+
+.topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.underheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right:136px;
+    padding-left: 18px;
+    margin-top: 16px;
+    background-color: white;
+}
+
+.leslogins {
+    display: flex;
+    justify-content: space-between;
+    width: 472px;
+}
+
+.leslogins i:hover ,.leslogins i:hover .titre {
+    color: red;
+}
+
+.logomenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 936px;
+}
+.header .underheader .logomenu .menu .underMenu {
+    padding: 12px;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    font-family: ui-monospace;
+    border-bottom: 4px solid transparent;
+    position: relative;
+
+}
+.titre {
+    font-size: 13PX;
+    color: black;
+    text-decoration: none;
+    font-family: 'Font Awesome 5 Free';
+    padding-left: 6px;
+}
+
+.header .underheader .logomenu .menu .underMenu:hover {
+    border-bottom: 4px solid blue;
+}
+.header .underheader .logomenu .menu #cate ul{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background-color: #eee;
+    left: 0%;
+    border-radius: 17px;
+    padding-left: 0%;
+    top: 66%;
+    /* border: 2px solid red; */
+    display: none;
+}
+.header .underheader .logomenu .menu #cate ul li:not(:last-child){
+   border-bottom: #87a6a8 2px solid;
+}
+.header .underheader .logomenu .menu #cate:hover ul{
+    display: block;
+}
+.header .underheader .logomenu .menu .underMenu ul li {
+    list-style: none;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.header .underheader .logomenu .menu .underMenu ul li:hover {
+    background-color: #2ec8d3;
+}
+.imageFrame {
+    height: 600px;
+    position: relative;
+}
+
+.imageFrame #img1 {
+    position: absolute;
+    width: 74%;
+    height: 90%;
+    left: 13%;
+    top: 3%;
+    border-radius: 2%;
+    z-index: 1;
+}
+.imageFrame #img2 {
+    position: absolute;
+    width: 74%;
+    height: 90%;
+    left: 13%;
+    top: 3%;
+    border-radius: 2%;
+    animation: animer;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes animer {
+    0% {
+        z-index: 0;
+    }
+    50% {
+        z-index: 2;
+    }
+}
+
+
+.categories {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 2%;
+    margin-bottom: 7%;
+}
+
+.categories .titredeCat {
+    width: 100%;
+    background-color: coral;
+    text-align: center;
+    padding-top: 1%;
+    height: 60px;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation-name: backColor;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes backColor {
+    0% {
+        background-color: rgb(209, 116, 82);
+    }
+    50% {
+        background-color: rgb(223, 102, 59);
+    }
+    100% {
+        background-color: rgb(235, 81, 26);
+    }
+}
+.categories .lesCate {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 0%;
+    text-align: center;
+    perspective: 300px;
+}
+.categories .lesCate a {
+    text-decoration: none;
+}
+.categories .lesCate p {
+    color: rgb(27, 24, 24);
+    font-size:large;
+    text-transform: capitalize;
+}
+.categories .lesCate .prix {
+    font-weight: bolder;
+    margin-top: -2%;
+}
+.categories .lesCate a:hover {
+   transform: translateZ(5px);
+}
+
+.categories .lesCate img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ContactAbout {
+    width: 100%;
+    height: 249px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+    text-align: center;
+}
+.ContactAbout h2 {
+    text-transform: capitalize;
+    font-size: xx-large;
+}
+.ContactAbout p {
+    text-transform: capitalize;
+}
+.ContactAbout i {
+    font-size: xxx-large;
+    color: white;
+    width: 13%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

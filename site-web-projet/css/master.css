@@ -1,0 +1,112 @@
+form{
+    color: aliceblue;
+    font-size: 15px;
+    
+    margin-top: 30px;
+    margin-left:400px;
+    margin-right:400px;
+    
+}
+fieldset{
+    color: aliceblue;
+    font-size: 15px;
+    background-color: rgb(33, 59, 59); 
+
+}
+
+table td {
+    
+    width:200px;
+}
+input{
+    width:340px;
+    min-height: 32px;
+    border: 2px solid silver;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+}
+.sexe{
+    float: left;
+    width:15px;
+}
+#notif{
+    float: left;
+    width:15px;
+}
+select{
+    width:350px;
+    min-height: 39px;
+    border: 2px solid silver;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 5px;
+   
+}
+option{
+    background-color: rgb(12, 159, 200);
+}
+.div{
+    padding-left:40px;
+}
+.div input{
+    color: aliceblue;
+    background-color: rgb(52, 47, 83);
+    width:200px;
+    min-height:23px;
+
+    
+}
+.a {
+
+    float:left;
+    display: block;
+    width:60px;
+    min-height: 23px;
+    padding-top:10px;
+   
+
+}
+.b{
+    float:left;
+    display: block;
+    width:230px;
+    padding-top:10px;
+}
+
+span{
+    color: red;
+     font-size: 13px;
+}
+
+#g{
+    width:230px;
+}
+#Sexe {
+    display: block;
+    min-height: 23px;
+    width:349px;
+    padding-top:11px;
+}
+h1{
+    text-align: center;
+}
+.danger{
+    text-align: center;
+    font-size: large;
+    background-color: red;
+}
+.success{
+    text-align: center;
+    font-size: large;
+    background-color: rgb(6, 114, 6);
+}
+.inscription{
+    text-align: center;
+    font-size: 20px;
+
+}
+.log{
+    color: coral;
+    font-size: 25px;
+    text-decoration: none;
+}
+
